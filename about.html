@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/misc.js"></script>
+	<link rel="stylesheet" href="css/font.css" />
+	<link rel="stylesheet" href="css/gen.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script>
+	function timepass(i){
+		switch(i){
+			case 0:
+				document.getElementById('about-flaff').innerHTML = 'Point at the founders for inside scoop';
+				break;
+			case 1:			
+				document.getElementById('about-flaff').innerHTML = '<strong>Beagle B</strong> is the CEO and frontman for Frantit. His primary focus is business development and strategy. If he is not spreading the word on frantit, he can be found beagling. One can hold a degree in Aerospace Engineering, but Mr. B did not choose to.<br><strong>BB[at]frantit[dot]at</strong';
+				break;
+		}
+	}
+	</script>
+<style>
+	#content-desc{
+		font:15px OpenSans;
+		color:black;
+		width:30%;
+		margin: 50px;
+		text-align:justify;
+		float:left;
+		display:inline;
+	}
+	#content-mugs{
+		width:60%;
+		float:right;
+		display:inline;
+		padding:10px;
+	}
+	.overlay{
+		font:15px OpenSans;
+		background-color:rgba(0,0,0,0.36);
+		width:100%;	
+		height:250px;
+		display:inline-block;
+		padding:5px 5px 5px 5px;
+	}
+</style>
+	<title>frantit</title>
+</head>
+<div class="headers">
+		 <!--div class="headers text"> <a href="index.html" ><i>f</i>rintit.at </a></div-->
+	</div>
+<body>
+
+<div id="content-desc">
+ <img src="img/frintit-logo.png" height="50%" width="50%" style="margin:auto;"/> 
+<p>
+At frantit, we believe that if you need to be frantic at any point in your life you need a safe place. Why not make that online. Be as frantic as you would like to be. Subscribe and stay updated. And please people, don't frantatise, but if you have to stay safe till we are up online.
+</p>
+
+<!--p>
+</p-->
+
+	<div id='about-flaff' class='overlay'>Point at the founders for the inside scoop</div>
+</div>
+<div id="content-mugs">
+	<img src="beagle.png" id='p-img' onmouseover="timepass(1);" onmouseout="timepass(0);"/>
+</div>
+	<div class="footers">
+
+			<div class="footertext">
+					
+					<!--a href="ad.html" class="link1">Advertising</a>
+					<a href="#" class="link1" style="display:none;">Investors</a>
+					<a href="#" class="link1" style="display:none;">Privacy & Terms</a-->
+					<a href="#" class="link1">About Us</a>
+					<!--a href="#" class="link2">f</a>
+					<a href="#" class="link2">t</a>
+					<a href="#" class="link2">@</a-->
+			</div>
+		</div>
+</body>
+</html>

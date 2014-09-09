@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/misc.js"></script>
+	<link rel="stylesheet" href="css/font.css" />
+	<link rel="Stylesheet" type="text/css" href="css/dark.css"></link>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+<script language="javascript" type="text/javascript">
+  function submitemail(){
+    alert('Thanks for subscribing. We will keep you updated. And, again, we would like to reiterate that we will not share your email or spam you. God promise.');
+    document.getElementById("subscribe_form").submit();
+  }
+</script>
+	<title>frantit</title>
+	
+</head>
+
+<div class="headers">
+		 <div class="headers text"> <a href="index.html" ><i>f</i>rantit.at </a></div>
+	</div>
+
+<body>
+
+	<div id="container">
+
+		<h1>Launching Quite Soon!</h1>
+		<h2 class="subtitle"></h2>
+
+
+		<div style="display:none;">
+		<!-- Countdown dashboard start -->
+		<div id="countdown_dashboard">
+			<div class="dash weeks_dash">
+				<span class="dash_title">weeks</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash days_dash">
+				<span class="dash_title">days</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash hours_dash">
+				<span class="dash_title">hours</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash minutes_dash">
+				<span class="dash_title">minutes</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash seconds_dash">
+				<span class="dash_title">seconds</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+		</div>
+		<!-- Countdown dashboard end -->
+		</div>
+
+		<div class="dev_comment">
+		<p>
+		</p>
+		</div>
+
+ <div class="subscribe">
+      <form action="email_subscribe.php" method="POST" enctype="multipart/form-data" id="subscribe_form">
+        <input type="text" name="email_sub" id="email_sub" class="faded" value="your@email.com" /> <input type="button" id="subscribe_button" value="Subscribe" onclick='submitemail()' />
+      </form>
+      <!--font color="white" size="2pt"><p>We hate spam as much as you do and we love keeping our inboxes as clean as you do. We will use your email only to send you occasional updates about <strong>frintit</strong>. We will not share your email with anyone.Scout's honor!</p></font-->
+</div>
+
+		<script language="javascript" type="text/javascript">
+			jQuery(document).ready(function() {
+				$('#countdown_dashboard').countDown({
+					targetDate: {
+						'day': 		29,
+						'month': 	8,
+						'year': 	2012,
+						'hour': 	12,
+						'min': 		0,
+						'sec': 		0
+					}
+				});
+				
+				$('#email_field').focus(email_focus).blur(email_blur);
+				$('#subscribe_form').bind('submit', function() { return false; });
+			});
+		</script>
+	
+	</div>
+
+	<div class="footers">
+			<!--div class="mobiles">
+				<div class="mobiles text"> Download for </div>
+				<a href="#" class="link2" onclick="alert('We will launch the app soon on the AppStore. Join our mailing list or follow us on Twitter - @frintit');"><img src='img/ibone 22px.png'/></a>
+				<a href="#" class="link2"onclick="alert('We will launch the app soon on the PlayStore. Join our mailing list or follow us on Twitter - @frintit');"><img src='img/android 22px.png'/></a>
+				<a href="#" class="link2"onclick="alert('We will launch the app soon on the Marketplace. Join our mailing list or follow us on Twitter - @frintit');"><img src='img/wp7 22px.png'/></a>
+
+			</div-->
+
+			<div class="footertext">
+					
+					<!--a href="ad.html" class="link1">Advertising</a>
+					<a href="#" class="link1" style="display:none;">Investors</a>
+					<a href="#" class="link1" style="display:none;">Privacy & Terms</a-->
+					<a href="about.html" class="link1">About Us</a>
+					<!--a href="#" class="link2">f</a>
+					<a href="#" class="link2">t</a>
+					<a href="#" class="link2">@</a-->
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
